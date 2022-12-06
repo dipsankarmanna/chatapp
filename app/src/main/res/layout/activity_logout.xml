@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogoutActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/g_logout"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="3dp"
+        android:src="@drawable/placeholder"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="17dp"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardView"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="337dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/messageBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="Type a message..."
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="12dp"
+                app:srcCompat="@drawable/ic_filter"
+                app:tint="#676767" />
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="15dp"
+                app:srcCompat="@drawable/ic_camera"
+                app:tint="#676767" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/send_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/circle_green"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_send"
+        app:tint="@color/white" />
+
+</RelativeLayout>

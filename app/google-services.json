@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "582712708910",
+    "project_id": "internchatapplication",
+    "storage_bucket": "internchatapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582712708910:android:b0af02db7c7bdd7730b4bf",
+        "android_client_info": {
+          "package_name": "com.example.internchatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582712708910-volekuaabjlrhff9pkkmbmm5td0mtqe6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBevQzIGL-K2_oujn50DaJGzMbtw00rSxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582712708910-volekuaabjlrhff9pkkmbmm5td0mtqe6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
